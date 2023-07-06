@@ -1,0 +1,78 @@
+.page {
+  height: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 100%;
+  font-family: $montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base-black;
+  background-color: $bg-lightest-grey;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+.container--footer {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+// .container__border {
+//   border-bottom: 1px solid $color-base-secondary;
+
+//   @media (min-width: $tablet-width) {
+//     border-bottom: none;
+//   }
+// }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

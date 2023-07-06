@@ -1,0 +1,122 @@
+.social {
+  margin: 0;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-base-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 0 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 36px;
+
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.social__list {
+  width: 160px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social__item {
+  width: 40px;
+  height: 40px;
+  background-color: $color-base-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $color-base-secondary;
+    border-radius: 4px;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-opacity;
+    border-radius: 4px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: $color-base-secondary;
+    border-radius: 4px;
+  }
+
+  &:active {
+    background-color: $color-alt-primary-opacity;
+    border-radius: 4px;
+  }
+}
+
+.social__link-icon {
+  color: $color-base-grey;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-base-primary;
+  }
+}
+
+.social__logo {
+  @media (min-width: $desktop-width) {
+    text-decoration: none;
+  }
+}
+
+.social__logo-icon {
+  display: block;
+  width: 82px;
+  height: 36px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.social__logo-text {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-base-black;
+    text-decoration: none;
+  }
+}

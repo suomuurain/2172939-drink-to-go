@@ -1,0 +1,116 @@
+.card {
+  padding: 40px 20px 20px;
+  background-color: $color-base-white;
+  border-radius: 4px;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $desktop-width) {
+      box-shadow: 0 5px 15px $shadow;
+    }
+  }
+}
+
+.card__link-image {
+  text-decoration: none;
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 30px;
+  }
+}
+
+.card__title {
+  margin: 0 0 4px;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  color: $color-base-black;
+  text-decoration: none;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 10px;
+
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.card__description {
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.card__to-buy {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__price {
+  margin: 0 0 0 -2px;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-base-black;
+}
+
+.card__button {
+  padding: 8px 20px 8px 46px;
+  width: 141px;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 16px;
+    top: calc(50% - 8px);
+    left: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../img/icons/stack.svg#add-to-cart-icon");
+  }
+}

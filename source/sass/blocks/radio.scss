@@ -1,0 +1,130 @@
+.radio {
+  margin: 0 0 34px 3px;
+  padding: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.radio__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.radio__item {
+  margin: 0 0 20px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.radio__title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-black;
+}
+
+/*control*/
+.radio__label-control {
+  padding: 0 0 0 34px;
+  position: relative;
+  display: block;
+  line-height: 24px;
+
+  &:disabled {
+    color: $color-base-grey;
+  }
+}
+
+.radio__label-control:hover .radio__mark,
+.radio__label-control:focus .radio__mark {
+  border-color: $color-alt-primary-lighter;
+}
+
+.radio__label-control:hover .radio__input + .radio__mark::before,
+.radio__label-control:focus .radio__input + .radio__mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: $color-alt-primary-opacity;
+  border-radius: 50%;
+  content: "";
+}
+
+.radio__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background-color: $color-base-white;
+  border: 2px solid $color-base-grey;
+  border-radius: 50%;
+
+  &:disabled {
+    color: $color-alt-light-grey;
+  }
+}
+
+.radio__input:focus + .radio__mark {
+  border: 2px solid $color-alt-primary-lighter;
+}
+
+.radio__input[type="radio"] + .radio__mark {
+  border-radius: 50%;
+}
+
+.radio__input[type="radio"]:checked + .radio__mark::before {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background-color: $color-alt-primary-lighter;
+  border-radius: 50%;
+  content: "";
+}
+
+/* disabled+checked disabled */
+
+.radio__label-control input[type="radio"]:checked:disabled + .radio__mark::before {
+  background-color: $color-alt-light-grey;
+}
+
+.radio__label-control input[type="radio"]:checked:disabled + .radio__mark {
+  border: 2px solid $color-alt-light-grey;
+  background-color: $bg-lightest-grey;
+}
+
+.radio__label-control input[type="radio"]:disabled + .radio__mark::before {
+  background-color: $color-alt-light-grey;
+}
+
+.radio__label-control input[type="radio"]:disabled + .radio__mark {
+  border: 2px solid $color-alt-light-grey;
+  background-color: $bg-lightest-grey;
+}
+
+.radio__label {
+  margin: 0;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-base-black;
+  cursor: pointer;
+}

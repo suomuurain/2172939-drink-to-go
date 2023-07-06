@@ -1,0 +1,319 @@
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: $color-base-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  height: 100%;
+  top: 20px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 77.3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(90deg, $color-base-white 0%, $color-base-white-opacity0 100%);
+      outline: none;
+    }
+  }
+
+  &:active:focus {
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(90deg, $color-alt-primary-opacity 0%, $color-alt-primary-opacity0 100%);
+    }
+  }
+
+  &::after {
+    font-weight: 700;
+    font-size: 20px;
+    color: $color-base-primary;
+  }
+}
+
+.swiper-button-next {
+  height: 100%;
+  top: 20px;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 77.3%;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(270deg, $color-base-white 0%, $color-base-white-opacity0 100%);
+      outline: none;
+    }
+  }
+
+  &:active:focus {
+    @media (min-width: $tablet-width) {
+      background: linear-gradient(270deg, $color-alt-primary-opacity 0%, $color-alt-primary-opacity0 100%);
+    }
+  }
+
+  &::after {
+    font-weight: 700;
+    font-size: 20px;
+    color: $color-base-primary;
+  }
+}
+
+.swiper-button-prev:disabled + .swiper-button-prev::after,
+.swiper-button-next:disabled + .swiper-button-next::after {
+  background-color: $color-base-grey;
+}
+
+.swiper-pagination {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0 0 57px;
+  }
+}
+
+/*CSS class name of single pagination bullet*/
+.swiper-pagination-bullet {
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    height: 4px;
+    background-color: $color-base-white;
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $desktop-width) {
+      background-color: $color-alt-primary-opacity;
+      outline: none;
+    }
+  }
+
+  &:active {
+    @media (min-width: $desktop-width) {
+      background-color: $color-base-primary;
+      outline: none;
+    }
+  }
+}
+
+/*CSS class name of currently active pagination bullet*/
+.swiper-pagination-bullet-active {
+  @media (min-width: $desktop-width) {
+    background-color: $color-base-primary;
+  }
+}
+
+/*контент*/
+
+.swiper__general-wrapper {
+  margin: 0;
+  padding: 20px 20px 60px;
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 80px 0;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 80px 84px 105px;
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    gap: 30px;
+  }
+
+  &--flat-white {
+    background-color: $bg-flat-white;
+
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient($bg-flat-white 77.3%, $color-base-white 22.7%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: none;
+      background-color: $bg-flat-white;
+    }
+  }
+
+  &--lavender {
+    background-color: $bg-lavender-latte;
+
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient($bg-lavender-latte 77.3%, $color-base-white 22.7%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: none;
+      background-color: $bg-lavender-latte;
+    }
+  }
+
+  &--espresso {
+    background-color: $bg-espresso;
+
+    @media (min-width: $tablet-width) {
+      background-image: linear-gradient($bg-espresso 77.3%, $color-base-white 22.7%);
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: none;
+      background-color: $bg-espresso;
+    }
+  }
+}
+
+.swiper__img-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.swiper__img {
+  display: block;
+}
+
+.swiper__content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    align-items: start;
+  }
+}
+
+.swiper__title {
+  margin: 0 0 10px;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: $color-base-black;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px;
+    font-size: 56px;
+    line-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.swiper__badge {
+  margin: 0 0 4px;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-base-primary;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.swiper__description {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-base-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 40px;
+    text-align: start;
+  }
+}
+
+.swiper__wrapper-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 6px;
+  }
+}
+
+.swiper__del-price {
+  margin: 2px 6px 0 0;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: $color-base-primary;
+}
+
+.swiper__new-price {
+  margin: 0 21px 0 0;
+  padding: 0;
+  font-family: $montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: $color-base-black;
+}
+
+.swiper__button {
+  width: 113px;
+  padding: 8px 20px;
+}

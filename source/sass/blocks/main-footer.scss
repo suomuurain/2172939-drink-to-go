@@ -1,0 +1,25 @@
+.main-footer {
+  background-color: $color-base-white;
+}
+
+.main-footer__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 317px 1fr;
+    gap: 30px;
+  }
+}
+
+.main-footer__inner-wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 0 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 49px 0 20px;
+  }
+}

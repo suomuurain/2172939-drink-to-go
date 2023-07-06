@@ -1,0 +1,32 @@
+/*fonts*/
+$montserrat: "Montserrat", "Arial", sans-serif;
+
+/*viewports*/
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+/*base colors*/
+$color-base-white: #ffffff;
+$color-base-grey: #bdbdbd;
+$color-base-black: #333333;
+$color-base-primary: #7859cf;
+$color-base-secondary: #f0ebff;
+$color-base-white-opacity0: rgba(255, 255, 255, 0);
+
+/*alt colors*/
+$color-alt-primary-opacity: rgba(120, 89, 207, 0.25);
+$color-alt-primary-opacity0: rgba(120, 89, 207, 0);
+$color-alt-primary-lighter: #9070ec;
+$color-alt-primary-darker: #593cac;
+$color-alt-light-grey: #e2e2e2;
+
+/*background colors*/
+$bg-lightest-grey: #f8f8f8;
+$bg-flat-white: #f3ebe1;
+$bg-lavender-latte: #eae6fc;
+$bg-espresso: #e5e6e8;
+
+/*other*/
+$shadow: rgba(0, 0, 0, 0.15);
