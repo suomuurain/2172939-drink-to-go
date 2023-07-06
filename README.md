@@ -15,4 +15,4 @@
 
 <a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
 
-Репозиторий создан для прохождения аттестации в рамках профессии  «[«Фронтенд-разработчик #15»](https://up.htmlacademy.ru/profession/frontender/15)» от [HTML Academy](https://htmlacademy.ru).
+Репозиторий создан для прохождения аттестации в рамках профессии  «[Фронтенд-разработчик #15](https://up.htmlacademy.ru/profession/frontender/15)» от [HTML Academy](https://htmlacademy.ru).
