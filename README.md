@@ -1,10 +1,10 @@
-# Личный проект «Drimk to Go» для этапа Грейдирования
+# Личный проект «Drink to Go» для этапа Грейдирования
 
 * Студент: [Анастасия Комлева](https://up.htmlacademy.ru/javascript/28/user/2172939).
 
 * При выполнении грейдирования затрачено 43,5 часа на реализацию проекта, в том числе на поиск необходимой информации и проверку на соответствие критериям.
 
-* Макет: [Drimk to Go](https://www.figma.com/file/X42O3DM1W8mI6TBNm5gV13/%D0%A4%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4-%D0%93%D1%80%D0%B5%D0%B9%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5---Drink2Go-(Copy)?type=design&node-id=86-11851&mode=design&t=Avp2r16w3asA85JE-0).
+* Макет: [Drink to Go](https://www.figma.com/file/X42O3DM1W8mI6TBNm5gV13/%D0%A4%D1%80%D0%BE%D0%BD%D1%82%D0%B5%D0%BD%D0%B4-%D0%93%D1%80%D0%B5%D0%B9%D0%B4%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5---Drink2Go-(Copy)?type=design&node-id=86-11851&mode=design&t=Avp2r16w3asA85JE-0).
 
 ### Краткая инструкция по работе
 
